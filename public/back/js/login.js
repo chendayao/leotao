@@ -3,7 +3,7 @@
  */
 $(function(){
     // 表单校验
-    $('form').boostrapValidator({
+    $('form').bootstrapValidator({
         fields:{
             username:{
                 validators:{
@@ -40,7 +40,7 @@ $(function(){
         },
         //配置小图标,成功 失败 校验中
        feedbackIcons:{
-           valid:'glyphicon glyphicon-ok',
+           valid: 'glyphicon glyphicon-ok',
            invalid:'glyphicon glyphicon-remove',
            validating:'glyphicon glyphicon-refresh'
        },
@@ -69,6 +69,9 @@ $(function(){
    })
     //重置表单,清除所有的样式
     $('[type=reset]').on('click',function(){
-        $('form').data('boostrapValidator').reserForm(true);
+        $('form').data('bootstrapValidator').resetForm(true);
     })
 })
+
+
+
