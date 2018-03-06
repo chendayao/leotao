@@ -18,7 +18,13 @@ a, a:link, a:visited, a:hover, a:active {
 .mt-150{
     margin-top: 150px;
 }
-
+.mb_20{
+    margin-bottom: 20px;
+}
+table.table-bordered td{
+    text-align: center;
+    vertical-align: middle;
+}
 /*侧边栏*/
 .lt_aside{
     width: 180px;
@@ -53,6 +59,12 @@ a, a:link, a:visited, a:hover, a:active {
     border-radius: 50%;
     text-align: center;
     margin:30px auto 0;
+}
+.user p{
+    text-align: center;
+    color:#fff;
+    line-height: 40px;
+    height: 40px;
 }
 .lt_aside .nav a{
     display: block;

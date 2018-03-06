@@ -2,8 +2,6 @@
  * Created by HUCC on 2017/11/22.
  */
 $(function () {
-
-
   //去后端获取数据，渲染到页面中
   var currentPage = 1;
   var pageSize = 5;
