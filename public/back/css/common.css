@@ -21,7 +21,7 @@ a, a:link, a:visited, a:hover, a:active {
 .mb_20{
     margin-bottom: 20px;
 }
-table.table-bordered td{
+table.table-bordered.table-hover tr td{
     text-align: center;
     vertical-align: middle;
 }
