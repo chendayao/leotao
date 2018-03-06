@@ -73,9 +73,7 @@ $(function(){
                     $('#addModal').modal('hide');
                     //清除表单样式
                     $form.data('bootstrapValidator').resetForm(true);
-                    console.log($form);
-                    console.log($form.data('bootstrapValidator'));
-
+                  
                     render();
                 }
 
