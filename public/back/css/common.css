@@ -30,9 +30,10 @@ table.table-bordered.table-hover tr td{
     width: 180px;
     height: 100%;
     background-color: #222d32;
-    position: absolute;
+    position: fixed;
     left:0;
     top:0;
+    z-index: 999;
     transition:all 1s;
 }
 .lt_aside.now{
@@ -96,7 +97,10 @@ table.table-bordered.table-hover tr td{
     width: 100%;
     background-color:#3c8dbc;
     margin-bottom:20px;
-    padding: 0 20px ;
+    padding: 0 20px 0 200px;
+    position: fixed;
+    top:0;
+    left:0;
 }
 .lt_main .lt_topbar a{
     font-size: 16px;
