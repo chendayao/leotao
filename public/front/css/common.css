@@ -30,6 +30,7 @@ html,body{
     position: absolute;
     top:0;
     background-color: #007aff;
+    color:#fff;
 }
 .lt_header a span{
     display: block;
@@ -41,6 +42,7 @@ html,body{
     text-align: center;
     line-height: 55px;
     font-size: 25px;
+    font-weight:normal;
 }
 .lt_header a .icon_back{
     left:0;
@@ -52,12 +54,14 @@ html,body{
     text-align: center;
     line-height: 55px;
     margin:0;
+    font-weight:normal;
 }
 .lt_main{
     height: 100%;
     width: 100%;
     position: relative;
     overflow:hidden;
+    background-color: #fff;
 }
 .lt_product{
     padding:10px;
@@ -69,6 +73,7 @@ html,body{
     padding:10px;
     border: 1px solid #ccc;
     text-align: center;
+    margin-bottom: 10px;
 }
 .lt_product a:nth-child(odd){
     margin-right: 4%;
@@ -110,4 +115,21 @@ html,body{
 .lt_footer li p{
     margin: 0;
     color:#fff;
+}
+.lt_search{
+    padding:10px;
+    position: relative;
+}
+.lt_search .search_input{
+    border: 1px solid #007aff;
+    border-radius: 5px;
+    height: 34px;
+    font-size: 12px;
+    margin:0;
+}
+.lt_search .btn_search{
+    position: absolute;
+    top:10px;
+    right:10px;
+    border-radius: 0 5px 5px 0;
 }

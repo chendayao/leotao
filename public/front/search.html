@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>搜索中心</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/search.css"/>
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css"/>
+    <link rel="stylesheet" href="lib/mui/css/mui.css"/>
+</head>
+<body>
+<div class="lt_container">
+    <div class="lt_header">
+        <a href="javascript:history.go(-1);">
+            <span class="mui-icon mui-icon-back"></span>
+        </a>
+        <h3>搜索中心</h3>
+    </div>
+    <div class="lt_main mui-clearfix">
+        <!--区域滚动-->
+        <div class="left_nav">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="lt_search">
+                        <input type="text" class="search_input" placeholder="请输入搜索关键字"/>
+                        <button class="mui-btn mui-btn-blue btn_search">搜索</button>
+                    </div>
+                    <div class="lt_history">
+                        <!--<div class="title mui-clearfix">-->
+                            <!--<span class="mui-pull-left">搜索历史</span>-->
+                            <!--<span class="mui-pull-right fa fa-trash empty_btn">清空记录</span>-->
+                        <!--</div>-->
+                        <!--<div class="content">-->
+                            <!--<ul>-->
+                                <!--<li class="mui-clearfix">-->
+                                    <!--<a href="#">111</a>-->
+                                    <!--<span class="mui-icon mui-icon-closeempty pull-right btn-delete"></span>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lt_footer">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="fa fa-shopping-cart"></span>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="category.html">
+                    <span class="fa fa-bars"></span>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <span class="fa fa-home"></span>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <span class="fa fa-user"></span>
+                    <p>会员中心</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/html" id="tem">
+  {{if arr.length===0}}
+  <p>没有历史记录</p>
+  {{else}}
+    <div class="title mui-clearfix">
+        <span class="mui-pull-left">搜索历史</span>
+        <span class="mui-pull-right fa fa-trash empty_btn">清空记录</span>
+    </div>
+    <div class="content">
+        <ul>
+            {{each arr v i}}
+            <li class="mui-clearfix">
+                <a href="searchList.html?key={{v}}">{{v}}</a>
+                <span data-index="{{i}}" class="mui-icon mui-icon-closeempty pull-right btn_delete"></span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</script>
+<script type="text/html" id="content">
+
+</script>
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
