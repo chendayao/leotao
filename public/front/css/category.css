@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.left_nav{
+    width: 90px;
+    height:100%;
+    float:left;
+    position: relative;
+}
+.left_nav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    background-color: pink;
+}
+.left_nav li.now a{
+    border-right: none;
+    background-color: #fff;
+}
+.right_content{
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.right_content li{
+    width: 33.33%;
+    float: left;
+}
+.right_content li a img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+.right_content li a p{
+    text-align: center;
+}
